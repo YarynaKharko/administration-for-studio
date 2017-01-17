@@ -1,5 +1,5 @@
 """
-WSGI config for untitled1 project.
+WSGI config for administration project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
