@@ -67,7 +67,8 @@ class Utiles(object):
         }
         if connection is None:
             connection = 'default'
-        if DB_data.has_key(connection):
+        # if DB_data.has_key(connection):
+        else:
             conn = pymysql.connect(host=DB_data[connection]['host'],
                                    port=3306,
                                    user=DB_data[connection]['user'],

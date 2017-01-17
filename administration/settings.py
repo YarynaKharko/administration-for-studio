@@ -27,7 +27,8 @@ SECRET_KEY = 'jdh07@1g#7b&fy3=yimuhel*te!ck%kj+-^=kir!ocnpo%8s6='
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'yakharko.pythonanywhere.com'
+    'yakharko.pythonanywhere.com',
+    u'127.0.0.1'
 ]
 
 

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1d2f88d9-a963-4f22-a4bc-760b2b307ce4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administration/settings.py" afterPath="$PROJECT_DIR$/administration/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/models.py" afterPath="$PROJECT_DIR$/projects/models.py" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,25 +36,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1950">
-              <caret line="130" column="12" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
+            <state relative-caret-position="300">
+              <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
               <folding>
                 <element signature="e#48#87#0" expanded="true" />
-                <marker date="1484687392000" expanded="true" signature="3947:4070" ph="INSERT INTO projects... " />
-                <marker date="1484687392000" expanded="true" signature="4120:4178" ph="INSERT INTO portfolio... " />
+                <marker date="1484689316000" expanded="true" signature="3963:4086" ph="INSERT INTO projects... " />
+                <marker date="1484689316000" expanded="true" signature="4136:4194" ph="INSERT INTO portfolio... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/administration/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="165">
+              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -130,8 +131,8 @@
         <option value="$PROJECT_DIR$/admininistration/settings.py" />
         <option value="$PROJECT_DIR$/admininistration/urls.py" />
         <option value="$PROJECT_DIR$/admininistration/wsgi.py" />
-        <option value="$PROJECT_DIR$/projects/models.py" />
         <option value="$PROJECT_DIR$/administration/settings.py" />
+        <option value="$PROJECT_DIR$/projects/models.py" />
       </list>
     </option>
   </component>
@@ -947,23 +948,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/models.py">
+    <entry file="file://$PROJECT_DIR$/administration/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="130" column="12" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
-          <folding>
-            <element signature="e#48#87#0" expanded="true" />
-            <marker date="1484687392000" expanded="true" signature="3947:4070" ph="INSERT INTO projects... " />
-            <marker date="1484687392000" expanded="true" signature="4120:4178" ph="INSERT INTO portfolio... " />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administration/settings.py">
+    <entry file="file://$PROJECT_DIR$/projects/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <folding>
+            <element signature="e#48#87#0" expanded="true" />
+            <marker date="1484689316000" expanded="true" signature="3963:4086" ph="INSERT INTO projects... " />
+            <marker date="1484689316000" expanded="true" signature="4136:4194" ph="INSERT INTO portfolio... " />
+          </folding>
         </state>
       </provider>
     </entry>
