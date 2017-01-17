@@ -127,7 +127,7 @@ class Services(object):
                                               unicode(project.project_main_image),
                                               project.proj_url,)
             result = cur.execute(query)
-            print "EXECUTE MYSQL QUERY : ", query, 'result = ', result
+            # print "EXECUTE MYSQL QUERY : ", query, 'result = ', result
             Services.insert_portfolio_to_db(project.project_portfolio, cursor=cur)
 
             cur.close()
@@ -138,35 +138,35 @@ class Services(object):
     def insert_portfolio_to_db(portfolio, cursor=None, connection=None):
         if portfolio is not None:
             if cursor is None:
-                print 'INFORMATION : Cursore is None. Create and open new connection.'
+                # print 'INFORMATION : Cursore is None. Create and open new connection.'
                 conn = Utiles.get_DB_connection(connection)
                 cursor = conn.cursor()
-                print 'CONNECTION INFORMATION : host :', cursor.connection.host, \
-                    '\nuser : ', cursor.connection.user
+                # print 'CONNECTION INFORMATION : host :', cursor.connection.host, \
+                #     '\nuser : ', cursor.connection.user
                 cursor.execute('SET SESSION CHARACTER_SET_RESULTS =utf8;')
                 cursor.execute('SET SESSION CHARACTER_SET_CLIENT =utf8;')
                 if isinstance(portfolio, Portfolio_DB):
                     query = queries_portfolio['insert'] % (portfolio.portfolio_image, portfolio.proj_id,)
                     result = cursor.execute(query)
-                    print "EXECUTE MYSQL QUERY : ", query, 'result = ', result
+                    # print "EXECUTE MYSQL QUERY : ", query, 'result = ', result
                 elif isinstance(portfolio, list):
                     for each in portfolio:
                         query = queries_portfolio['insert'] % (each.portfolio_image, each.proj_id,)
                         result = cursor.execute(query)
-                        print "EXECUTE MYSQL QUERY : ", query, 'result = ', result
+                        # print "EXECUTE MYSQL QUERY : ", query, 'result = ', result
                 cursor.close()
                 conn.commit()
                 conn.close()
             else:
-                print 'Cursore is not None. Use cursore that passed into.'
+                # print 'Cursore is not None. Use cursore that passed into.'
                 if isinstance(portfolio, Portfolio_DB):
                     query = queries_portfolio['insert'] % (portfolio.portfolio_image, portfolio.proj_id,)
                     result = cursor.execute(query)
-                    print "EXECUTE MYSQL QUERY : ", query, 'result = ', result
+                    # print "EXECUTE MYSQL QUERY : ", query, 'result = ', result
                 elif isinstance(portfolio, list):
                     for each in portfolio:
                         query = queries_portfolio['insert'] % (each.portfolio_image, each.proj_id,)
                         result = cursor.execute(query)
-                        print "EXECUTE MYSQL QUERY : ", query, 'result = ', result
-        else:
-            print 'WARNING : Portfolio is None element. Cannot insert None element to DB.'
+                        # print "EXECUTE MYSQL QUERY : ", query, 'result = ', result
+        # else:
+            # print 'WARNING : Portfolio is None element. Cannot insert None element to DB.'
